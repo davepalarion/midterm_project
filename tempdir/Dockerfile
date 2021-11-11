@@ -1,5 +1,6 @@
 FROM python
 RUN pip install flask
-COPY ./templates /home/devasc/Desktop/app/templates/
-COPY app.py /home/devasc/Desktop/app/
+COPY  ./templates /home/myapp/templates/
+COPY  project-app.py /home/myapp/
 EXPOSE 8080
+CMD python3 /home/myapp/project-app.py
